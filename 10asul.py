@@ -144,12 +144,12 @@ helpMessage ="""||=====  F O R   U S E R  =====||
 
                ✯==== Creator ====✯
 	
-  Http://line.me/ti/p/~toon.38
+  Http://line.me/ti/p/~samuri5
 
                     
 """
 
-Thaihelp ="""\n
+Thaihelp ="""
     ===✒️ ชุดคำสั่งAsul Bot ✒️ ===
 ||✒️ คท  - ส่งคท.ตัวเอง(Me)
 ||✒️ ไอดี  - ส่งMidตัวเอง
@@ -213,9 +213,9 @@ Thaihelp ="""\n
 ||✯ [Staff add/remove @]	   
 ||======= สำหรับแอดมิน =======||
 
-✯★Creator By ═ह वतेु১तेั७ழণ১ह═★✯
+✯★Creator By Ŕèďbøť★✯
 
- Http://line.me/ti/p/~toon.38
+ Http://line.me/ti/p/~samuri5
 
 """
 helo=""
@@ -244,9 +244,9 @@ wait = {
     'leaveRoom':True,
     'timeline':False,
     'autoAdd':True,
-    'message':"selt bot by\n┅═हवतेु১तेั७ழণ১ह═ \nhttp://line.me/ti/p/~toon.38",
+    'message':"selt bot by\n✯★Ŕèďbøť★✯ \nhttp://line.me/ti/p/~samuri5",
     "lang":"JP",
-    "comment":"Auto Like By \n┅═ह वतेु১तेั७ழণ১ह═┅",
+    "comment":"Auto Like By \n✯★Ŕèďbøť★✯,
     "commentOn":False,
     "likeOn":False,
     "commentBlack":{},
@@ -378,11 +378,11 @@ def bot(op):
         if op.type == 24:
             if wait["leaveRoom"] == True:
                 cl.leaveRoom(op.param1)
-        if op.type == 26:
+        if op.type == 25:
             msg = op.message
             if msg.toType == 0:
                 msg.to = msg.from_
-                if msg.from_ == "u5d777f646c37180c939be97aa5097096":
+                if msg.from_ == admin:
                     if "join:" in msg.text:
                         list_ = msg.text.split(":")
                         try:
@@ -396,24 +396,24 @@ def bot(op):
                 if wait["leaveRoom"] == True:
                     cl.leaveRoom(msg.to)
 # ----------------- NOTIFED MEMBER OUT GROUP
-#        if op.type == 15:
-#            if op.param2 in bot1:
-#                return
-#            cl.sendText(op.param1,"ไปซะละ ลาก่อย\n(*´･ω･*)\nSelfbot by\n┅═ह वतेु১तेั७ழণ১ह═┅")
-#            print "MEMBER HAS LEFT THE GROUP"
+        if op.type == 15:
+            if op.param2 in bot1:
+                return
+            cl.sendText(op.param1,"ไปซะละ ลาก่อย😭😭\n(*´･ω･*)\nSelfbot by\n✯★Ŕèďbøť★✯")
+            print "MEMBER HAS LEFT THE GROUP"
 #------------------ KICK OUT FORM GROUP
-#        if op.type == 19:
-#            if op.param2 in Bots:
-#                return
-#            cl.sendText(op.param1,cl.getContact(op.param2).displayName + " ซัดเต็มข้อเลยครับ ท่านผู้ชม")
-#            print "MEMBER KICK OUT FORM GROUP"
+        if op.type == 19:
+            if op.param2 in Bots:
+                return
+            cl.sendText(op.param1,cl.getContact(op.param2).displayName + " ซัดเต็มข้อเลยนะครับ ท่านผู้ชม")
+            print "MEMBER KICK OUT FORM GROUP"
 # ----------------- NOTIFED MEMBER JOIN GROUP
-#        if op.type == 17:
-#            if op.param2 in bot1:
-#                return
-#            ginfo = cl.getGroup(op.param1)
-#            cl.sendText(op.param1, "ยินดีต้อนรับ 😊" + cl.getContact(op.param2).displayName + " สู่กลุ่ม " + "👉" + str(ginfo.name) + "👈")
-#            print "MEMBER HAS JOIN THE GROUP"
+        if op.type == 17:
+            if op.param2 in bot1:
+                return
+            ginfo = cl.getGroup(op.param1)
+            cl.sendText(op.param1, "ยินดีต้อนรับ 😊" + cl.getContact(op.param2).displayName + " สู่กลุ่ม " + "👉" + str(ginfo.name) + "👈" + "นะต๊ะ😘😘)
+            print "MEMBER HAS JOIN THE GROUP"
             if msg.contentType == 16:
                 url = msg.contentMetadata["postEndUrl"]
                 cl.like(url[25:58], url[66:], likeType=1001)
@@ -3813,17 +3813,17 @@ thread2.start()
 #        if hasil['result']['posts'][zx]['postInfo']['liked'] == False:
 #          try:    
 #            ki.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-#            ki.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by MuhMursalinD\n\nHttp://line.me/ti/p/~muhmursalind")
+#            ki.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by ✯★Ŕèďbøť★✯linD\n\nHttp://line.me/ti/p/~samuri5")
 #            ki2.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-#            ki2.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by MuhMursalinD\n\nHttp://line.me/ti/p/~muhmursalind")
+#            ki2.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by ✯★Ŕèďbøť★✯linD\n\nHttp://line.me/ti/p/~samuri5")
 #            ki3.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-#            ki3.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by MuhMursalinD\n\nHttp://line.me/ti/p/~muhmursalind")
+#            ki3.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by ✯★Ŕèďbøť★✯linD\n\nHttp://line.me/ti/p/~samuri5")
 #            ki4.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-#            ki4.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by MuhMursalinD\n\nHttp://line.me/ti/p/~muhmursalind")
+#            ki4.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by ✯★Ŕèďbøť★✯linD\n\nHttp://line.me/ti/p/~samuri5")
 #            ki5.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-#            ki5.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by MuhMursalinD\n\nHttp://line.me/ti/p/~muhmursalind")
+#            ki5.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by ✯★Ŕèďbøť★✯linD\n\nHttp://line.me/ti/p/~samuri5")
 #            ki6.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-#            ki6.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by MuhMursalinD\n\nHttp://line.me/ti/p/~muhmursalind")
+#            ki6.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like by ✯★Ŕèďbøť★✯linD\n\nHttp://line.me/ti/p/~samuri5")
 #            print "Like"
 #            print "Like"
 #            print "Like"
